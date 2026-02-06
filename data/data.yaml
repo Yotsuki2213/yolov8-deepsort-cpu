@@ -1,0 +1,10 @@
+train: C:\Users\22136\PycharmProjects\yolov8-t\yolov8-train-master\data\train\images
+val: C:\Users\22136\PycharmProjects\yolov8-t\yolov8-train-master\data\val\images
+test: C:\Users\22136\PycharmProjects\yolov8-t\yolov8-train-master\data\test\images
+
+# number of classes
+nc: 1
+
+# class names
+names:
+  - 'fish'
