@@ -5,7 +5,7 @@ from deep_sort_realtime.deepsort_tracker import DeepSort
 
 def main():
     # 加载预训练模型
-    model = YOLO('./runs/detect/train4/weights/best.pt')
+    model = YOLO('./runs/detect/train8/weights/best.pt')
 
     # 初始化跟踪器
     tracker = DeepSort(
@@ -39,7 +39,7 @@ def main():
             frame_count += 1
 
             # 对当前帧进行检测
-            results = model(source=frame, conf=0.65, verbose=False)
+            results = model(source=frame, conf=0.5, verbose=False)
 
             detections = []
             detected_objects = []  # 存储检测到的对象信息
