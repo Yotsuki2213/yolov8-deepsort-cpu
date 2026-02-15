@@ -6,7 +6,7 @@ model = YOLO('./runs/detect/train4/weights/last.pt')
 
 model.train(
     data='./data/data.yaml',
-    epochs=30,
+    epochs=20,
     imgsz=640,
     # device='0', # '0'表示GPU
     device='CPU',
